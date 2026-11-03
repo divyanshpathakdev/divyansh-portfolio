@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divyansh Pathak | Web Developer Portfolio</title>
+    <meta name="description"
+        content="Final-year BCA student and web developer skilled in HTML, CSS, JavaScript, Python and Django.">
+    <link rel="icon" href="image/DP_logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Divyansh Pathak | Web Developer Portfolio">
+    <meta property="og:description"
+        content="Final-year BCA student and web developer skilled in HTML, CSS, JavaScript, Python and Django.">
+    <meta property="og:image" content="https://YOUR-SITE-URL/image/divyansh_hd.png">
+    <meta name="theme-color" content="#114232">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- font awasome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <script>
+        // Page khulte hi saved theme lagao (taaki galat color ka flash na aaye)
+        try {
+            if (localStorage.getItem("theme") === "dark") {
+                document.documentElement.setAttribute("data-theme", "dark");
+            }
+        } catch (e) { }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- NAVBAR START -->
+    <header>
+        <nav class="navbar">
+
+            <!-- left div -->
+
+            <a href="#home" class="leftNav">
+                <div class="logo"></div>
+                <div class="saprater"></div>
+                <div class="nameText">Divyansh Pathak</div>
+            </a>
+
+            <!-- mid div -->
+
+            <div class="midNav" id="primary-nav">
+                <div class="nav-link">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- right div -->
+            <div class="toggle">
+                <button class="theme-btn" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+                    <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+                    </svg>
+                    <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"></circle>
+                        <path
+                            d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4">
+                        </path>
+                    </svg>
+                </button>
+
+                <div class="rightNav resumeButton">
+                    <a href="divyansh_resume.pdf" download>
+                        <div class="inline">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                        </div>
+                        <div>Download Resume</div>
+                    </a>
+                </div>
+            </div>
+
+
+            <button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="primary-nav">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+    </header>
+    <!-- NAVBAR END -->
+    <main>
+
+        <!-- HERO SECTION START -->
+        <section id="home" class="hero">
+            <div class="leftHero">
+                <div class="dot">
+                    <i class="fa-solid fa-circle-dot"></i>Available for Opportunities
+                    <div class="line"></div>
+                </div>
+                <p class="greet">HI, I'M</p>
+                <h1 class="main-heading">DIVYANSH PATHAK</h1>
+                <h3 class="role">FINAL-YEAR BCA STUDENT <span class="pipe">|</span> WEB DEVELOPER <span
+                        class="pipe">|</span> ASPIRING
+                    AI ENGINEER</h3>
+                <p class="bio">Building modern web experiences with code and creativity</p>
+                <div class="hero-btn">
+                    <a href="#projects" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                        View Projects
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Contact Me
+                    </a>
+                </div>
+                <!-- batches -->
+                <div class="batch">
+                    <div class="bdiv">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <div>
+                            <h4>BCA Final Year</h4>
+                            <p>H.R.P.G College, Khalilabad</p>
+                        </div>
+                    </div>
+                    <div class="batch-divider"></div>
+                    <div class="bdiv">
+                        <i class="fa-brands fa-python"></i>
+                        <div>
+                            <h4>Python & Django</h4>
+                            <p>Backend Development</p>
+                        </div>
+                    </div>
+                    <div class="batch-divider"></div>
+                    <div class="bdiv">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <h4>Web Development</h4>
+                            <p>HTML|CSS|JavaScript</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT HERO START -->
+
+            <div class="rightHero">
+                <div class="hero-images"></div>
+                <div class="hero-text">
+                    <span>BUILD</span>
+                    <span>CREATE</span>
+                    <span>GROW</span>
+                </div>
+            </div>
+            <div class="scroll">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="5" y="2" width="14" height="20" rx="7" ry="7"></rect>
+                    <line x1="12" y1="6" x2="12" y2="10"></line>
+                </svg>
+                <span>Scroll Down</span>
+            </div>
+
+            <!-- HERO BUTTONS -->
+
+        </section>
+        <!-- HERO SECTION END -->
+
+        <!-- ABOUT SECTION START-->
+
+        <section class="about-section" id="about">
+            <div class="about-grid">
+                <div class="about-left">
+                    <div class="dot">
+                        <i class="fa-solid fa-circle-dot"></i>Get To Know Me
+                        <div class="line"></div>
+                    </div>
+                    <h3 class="about-text">About Me</h3>
+                    <p>
+                        I'm Divyansh, a final-year BCA student at H.R.P.G. College,
+                        Khalilabad, passionate about web development and
+                        building practical digital solutions.
+                    </p>
+
+                    <p>
+                        I love learning new technologies, solving real-world
+                        problems and creating user-friendly web applications.
+                        My current goal is to become a Full Stack Developer,
+                        and in the future I aim to grow into an AI/ML Engineer.
+                    </p>
+
+                    <div class="certificate-box">
+
+                        <div class="certificate-icon"><i class="fa-solid fa-award"></i></div>
+
+                        <div class="certificate-text">
+                            <strong>Python & Django Training Certificate</strong>
+                            <span>45-Day Training Program [Softpro India Pvt. Ltd.]</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="about-right">
+                    <div class="about-card">
+                        <div class="about-right-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h4>Education</h4>
+                        <div class="card-line"></div>
+                        <p>
+                            BCA<br>
+                            H.R.P.G. College, Khalilabad<br>
+                            <span>Expected 2027</span>
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-right-icon"><i class="fa-solid fa-bullseye"></i></div>
+                        <h4>Goals</h4>
+                        <div class="card-line"></div>
+                        <p>
+                            Current : Full Stack Developer<br>
+                            Future : AI/ML Engineer
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-right-icon"><i class="fa-regular fa-star"></i></div>
+                        <h4>Interests</h4>
+                        <div class="card-line"></div>
+                        <p>
+                            Python | Django | Web Dev |
+                            problem solving
+                        </p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-right-icon"><i class="fa-solid fa-magnifying-glass-location"></i></div>
+                        <h4>Location</h4>
+                        <div class="card-line"></div>
+                        <p>
+                            Sant Kabir Nagar, Uttar Pradesh,
+                            India.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION END -->
+
+        <!-- SKILL SECTION START -->
+
+        <section class="skill-section" id="skills">
+            <div class="skill-head">
+                <div class="dot">
+                    <i class="fa-solid fa-circle-dot"></i>What I Know
+                    <div class="line"></div>
+                </div>
+                <h3 class="about-text">Skills</h3>
+                <p>
+                    Technologies and tools I use to build things for the web.
+                </p>
+            </div>
+            <div class="skill-grid">
+                <div class="python-box">
+                    <h4>Python & Django</h4>
+                    <div class="py-line"></div>
+                    <p> Backend development, REST APIs, models and authentication.</p>
+                    <div class="bar">
+                        <div class="py-div">
+                            <div class="s-icon"><i class="devicon-python-plain"></i></div>
+                            <div class="s-text">
+                                <div class="p-text"><span>Python</span><span>70%</span></div>
+                                <div class="py-bar">
+                                    <div class="py-70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="py-div">
+                            <div class="s-icon"><i class="devicon-django-plain"></i></div>
+                            <div class="s-text">
+                                <div class="p-text"><span>Django</span><span>60%</span></div>
+                                <div class="py-bar">
+                                    <div class="py-60"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <div class="py-div">
+                            <div class="s-icon"><i class="fa-solid fa-plug py-icon"></i></div>
+                            <div class="s-text">
+                                <div class="p-text"><span>REST API</span><span>50%</span></div>
+                                <div class="py-bar">
+                                    <div class="py-50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frontend">
+                    <h4>Frontend</h4>
+                    <div class="py-line"></div>
+                    <div class="frontend-grid">
+                        <div class="box-grid">
+                            <div class="frontend-icon"><i class="fa-brands fa-html5"></i></div>
+                            <span>HTML</span>
+                            <div class="frontend-bar">
+                                <div class="frontend-90"></div>
+                            </div>
+                            <small>90%</small>
+                        </div>
+                        <div class="box-grid">
+                            <div class="frontend-icon"><i class="fa-brands fa-css3"></i></div>
+                            <span>CSS</span>
+                            <div class="frontend-bar">
+                                <div class="frontend-80"></div>
+                            </div>
+                            <small>80%</small>
+                        </div>
+                        <div class="box-grid">
+                            <div class="frontend-icon"><i class="fa-brands fa-js"></i></div>
+                            <span>JavaScript</span>
+                            <div class="frontend-bar">
+                                <div class="frontend-80"></div>
+                            </div>
+                            <small>80%</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="github">
+                    <div class="s-icon"><i class="fa-brands fa-github"></i></div>
+                    <div class="s-text">
+                        <div class="p-text"><span>Git & GitHub</span><span>65%</span></div>
+                        <div class="py-bar">
+                            <div class="gi-65"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="database">
+                    <div class="s-icon"><i class="fa-solid fa-database"></i></div>
+                    <div class="s-text">
+                        <div class="p-text"><span>MySQL</span><span>60%</span></div>
+                        <div class="py-bar">
+                            <div class="py-60"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearning">
+                    <div class="learning">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>Currently Learning</span>
+                    </div>
+                    <div class="learn-text">
+                        <span class="bootstrap">Bootstrap</span>
+                        <span>React</span>
+                        <span>Machine Learning</span>
+                        <span>Data Structures</span>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SKILL SECTION END -->
+
+        <!-- PROJECT SECTION START -->
+        <section class="project-section" id="projects">
+            <div class="skill-head">
+                <div class="dot">
+                    <i class="fa-solid fa-circle-dot"></i>What I Built
+                    <div class="line"></div>
+                </div>
+                <h3 class="about-text">Projects</h3>
+                <p>
+                    Some of the things I have built while learning.
+                </p>
+            </div>
+            <div class="project-grid">
+                
+                <!-- frist card -->
+                <div class="p-card">
+                    <div class="proj-media">
+                        <div class="proj-img">
+                            <img src="image/project/OBJ1.png" alt="Online Job Portal Screenshot">
+                        </div>
+                        <span class="proj-num">01</span>
+                        <span class="proj-tag">Full Stack</span>
+
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">
+                            <h4>Online Job Portal</h4>
+                            <span class="proj-status">
+                                Completed
+                            </span>
+                        </div>
+                        <div class="proj-line"></div>
+                        <p class="proj-dis">Full Stack Application with Admin Panel,<br> Job Seeker dashboard, Register.
+                        </p>
+                        <div class="proj-tags">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                        <div class="proj-btns">
+                            <a href="#" class="proj-btn-fill">
+                                Live Demo
+                            </a>
+                            <a href="#" class="proj-btn-line">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- second card -->
+
+                <div class="p-card">
+                    <div class="proj-media">
+                        <div class="proj-img">
+                            <img src="image/project/SLRP.png" alt="Online Job Portal Screenshot">
+                        </div>
+                        <span class="proj-num">02</span>
+                        <span class="proj-tag">Full Stack</span>
+
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">
+                            <h4>Student Learning Portal</h4>
+                            <span class="proj-status">
+                                Completed
+                            </span>
+                        </div>
+                        <div class="proj-line"></div>
+                        <p class="proj-dis">Full Stack Application with Admin Panel,<br>Student & Admin with login and
+                            Register.
+                        </p>
+                        <div class="proj-tags">
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>SQLite</span>
+                            <span>HTML/CSS/JS</span>
+                        </div>
+                        <div class="proj-btns">
+                            <a href="#" class="proj-btn-fill">
+                                Live Demo
+                            </a>
+                            <a href="#" class="proj-btn-line">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third card -->
+                <div class="p-card">
+                    <div class="proj-media">
+                        <div class="proj-img">
+                            <img src="image/project/portfolio01.jpg" alt="Portfolio">
+                        </div>
+                        <span class="proj-num">03</span>
+                        <span class="proj-tag">Frontend</span>
+
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">
+                            <h4>Portfolio Website</h4>
+                            <span class="proj-status">
+                                Live
+                            </span>
+                        </div>
+                        <div class="proj-line"></div>
+                        <p class="proj-dis">Responsive personal site, the one you are looking at.</p>
+                        <div class="proj-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+
+                        <!-- fourth card -->
+                        <div class="proj-btns">
+                            <a href="#" class="proj-btn-fill">
+                                Live Demo
+                            </a>
+                            <a href="#" class="proj-btn-line">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- fourth card -->
+
+                <div class="p-card">
+                    <div class="proj-media">
+                        <div class="proj-img">
+                            <img src="image/project/RPS_game.png" alt="Rock Paper Scissor - Game">
+                        </div>
+                        <span class="proj-num">04</span>
+                        <span class="proj-tag">Frontend</span>
+
+                    </div>
+                    <div class="proj-body">
+                        <div class="proj-title">
+                            <h4>Rock Paper Scissor - Game</h4>
+                            <span class="proj-status">
+                                complete
+                            </span>
+                        </div>
+                        <div class="proj-line"></div>
+                        <p class="proj-dis">Play game (Rock Paper Scissor - Game) with the computer.</p>
+                        <div class="proj-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="proj-btns">
+                            <a href="#" class="proj-btn-fill">
+                                Live Demo
+                            </a>
+                            <a href="#" class="proj-btn-line">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="Proj-comming">
+                    <div class="comming-text">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span>More projects coming soon</span>
+                    </div>
+                    <div class="btn">
+                        <a href="https://github.com/divyanshpathakdev" target="_blank" rel="noopener">View all on
+                            GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECT SECTION END -->
+
+        <!-- CONTACT ME SECTION START -->
+
+        <section class="contact-section" id="contact">
+            <div class="skill-head">
+                <div class="dot">
+                    <i class="fa-solid fa-circle-dot"></i>Get In Touch
+                    <div class="line"></div>
+                </div>
+                <h3 class="about-text">Contact Me</h3>
+                <p>
+                    Have a project, an opportunity or just a question? Say hello.
+                </p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-tag">
+                        <span class="tag-dot"></span>
+                        Available for Opportunities
+                    </div>
+                    <h4>Let's talk</h4>
+                    <div class="card-line"></div>
+                    <a href="mailto:diyanshpathak112@gmail.com" class="contact-row">
+                        <div class="row-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="row-text">
+                            <span>Email</span>
+                            <strong>diyanshpathak112@gmail.com</strong>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/divyanshhpathak/" target="_blank" rel="noopener"
+                        class="contact-row">
+                        <div class="row-icon iconn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                        <div class="row-text">
+                            <span>LinkedIn</span>
+                            <strong>linkedin.com/in/divyanshhpathak</strong>
+                        </div>
+                    </a>
+                    <a href="https://github.com/divyanshpathakdev" target="_blank" rel="noopener" class="contact-row">
+                        <div class="row-icon iconn">
+                            <i class="fa-brands fa-square-github"></i>
+                        </div>
+                        <div class="row-text">
+                            <span>GitHub</span>
+                            <strong>github.com/divyanshpathakdev</strong>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/maps/search/Sant+Kabir+Nagar+Uttar+Pradesh" target="_blank"
+                        rel="noopener" class="contact-row">
+                        <div class="row-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="row-text">
+                            <span>Location</span>
+                            <strong>Sant Kabir Nagar, Uttar Pradesh</strong>
+                        </div>
+                    </a>
+                </div>
+                <!-- right form -->
+                <form action="https://formspree.io/f/mgaazedo" class="contact-form" method="POST">
+                    <h4>Send a message</h4>
+                    <div class="card-line"></div>
+                    <div class="form-two">
+                        <div class="form-group">
+                            <label for="c-name">Your Name</label>
+                            <input type="text" placeholder="Enter your name" id="c-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="c-email">Your Email</label>
+                            <input type="email" placeholder="Enter your email" id="c-email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-subject">Subject</label>
+                        <input type="text" placeholder="What is this about?" id="c-subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-message">Message</label>
+                        <textarea name="message" id="c-message" placeholder="Write your message here..." rows="4"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="contact-btn">Send Message</button>
+                </form>
+                <div class="contact-strip">
+                    <div class="strip-text">
+                        <i class="fa-solid fa-handshake"></i>
+                        Open to internships, freelance and full-time roles
+                    </div>
+                    <a href="divyansh_resume.pdf" download class="strip-btn">Download Resume
+                        <i class="fa-regular fa-circle-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT ME SECTION END -->
+
+    </main>
+    <!-- FOOTER SECTION START -->
+
+    <footer class="footer">
+        <div class="footer-top">
+            <a href="#home" class="foot-logo">
+                <img src="image/DP_logo.png" alt="Divyansh Pathak logo">
+                <div class="foot-saprater"></div>
+                <strong class="foot-name">Divyansh Pathak</strong>
+            </a>
+            <div class="footer-social">
+                <a href="https://github.com/divyanshpathakdev" target="_blank" rel="noopener" aria-label="Github"
+                    title="Github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/divyanshhpathak/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn" title="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="mailto:diyanshpathak112@gmail.com" aria-label="Email">
+                    <i class="fa-regular fa-envelope-open" title="Email"></i></a>
+                <a href="https://www.instagram.com/_.divyanshpathak.07/" target="_blank" rel="noopener"
+                    aria-label="Instagram" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Divyansh Pathak. All rights reserved.</p>
+            <a href="#home">
+                <span>Back to Top</span>
+                <i class="fa-regular fa-circle-up"></i>
+            </a>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>
